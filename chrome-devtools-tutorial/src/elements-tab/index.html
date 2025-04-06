@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elements Tab Example</title>
+    <link rel="stylesheet" href="../styles.css"> <!-- Link to common styles -->
+    <style>
+        /* Inline styles for demonstration purposes */
+        .highlight {
+            background-color: yellow; /* Highlighted background for selected elements */
+        }
+    </style>
+</head>
+<body>
+    <h1>Elements Tab Example</h1>
+    <p>This example demonstrates how to inspect and modify DOM elements using Chrome Developer Tools.</p>
+
+    <div id="container">
+        <h2>Sample Element</h2>
+        <p class="text">This is a paragraph that can be modified.</p>
+        <button id="changeTextButton">Change Text</button>
+    </div>
+
+    <script>
+        // Function to change the text of the paragraph when the button is clicked
+        document.getElementById('changeTextButton').addEventListener('click', function() {
+            // Select the paragraph element
+            const paragraph = document.querySelector('.text');
+            // Modify the text content of the paragraph
+            paragraph.textContent = 'The text has been changed!'; // Change the text
+            paragraph.classList.add('highlight'); // Add a highlight class to the paragraph
+        });
+    </script>
+
+    <footer>
+        <p>Open the Elements tab in Chrome DevTools to inspect and modify the DOM elements.</p>
+        <p>Try changing the text by clicking the button and see the changes reflected in the Elements tab!</p>
+    </footer>
+</body>
+</html>

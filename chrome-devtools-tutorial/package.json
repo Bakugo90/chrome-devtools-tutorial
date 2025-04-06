@@ -1,0 +1,22 @@
+{
+  "name": "chrome-devtools-tutorial",
+  "version": "1.0.0",
+  "description": "A project designed to teach students how to use various Chrome Developer Tools through practical examples.",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server .",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "chrome",
+    "developer",
+    "tools",
+    "tutorial",
+    "education"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
